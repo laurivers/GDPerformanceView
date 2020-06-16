@@ -292,7 +292,7 @@ static const CGFloat kDefaultHeight = 20.f;
     CGSize labelSize = [self.monitoringTextLabel sizeThatFits:CGSizeMake(windowWidth, kDefaultHeight)];
     CGFloat safeAreaOffset = [self safeAreaTopMargin];
 
-    CGRect frame = CGRectMake((windowWidth - labelSize.width)/2.0, safeAreaOffset + ((kDefaultHeight - labelSize.height) / 2.0f), labelSize.width, labelSize.height);
+    CGRect frame = CGRectMake(15, safeAreaOffset + ((kDefaultHeight - labelSize.height) / 2.0f), labelSize.width, labelSize.height);
     [self.monitoringTextLabel setFrame:frame];
 }
 
